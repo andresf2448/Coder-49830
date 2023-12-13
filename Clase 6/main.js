@@ -137,22 +137,36 @@ estructura de un arreglo
 
 // console.log(productos);
 
-class Producto {
-  constructor(nombre, precio) {
-    this.nombre = nombre;
-    this.precio = precio;
-  }
-}
+// class Producto {
+//   constructor(nombre, precio) {
+//     this.nombre = nombre;
+//     this.precio = precio;
+//   }
+// }
 
-const productos = [];
+// const productos = [];
 
-for (let i = 0; i < 3; i++) {
-  let nombre = prompt("Ingrese el nombre del producto a agregar");
-  let precio = Number(prompt("Ingrese el precio del producto"));
+// for (let i = 0; i < 3; i++) {
+//   let nombre = prompt("Ingrese el nombre del producto a agregar");
+//   let precio = Number(prompt("Ingrese el precio del producto"));
 
-  let producto = new Producto(nombre, precio);
+//   let producto = new Producto(nombre, precio);
 
-  productos.push(producto);
-}
+//   productos.push(producto);
+// }
 
-console.log(productos);
+// console.log(productos);
+
+// const productos = [
+//   { nombre: "asd", precio: 1000 },
+//   { nombre: "asdf", precio: 500 },
+//   { nombre: "asdf", precio: 100 },
+// ];
+
+// let nombre = "asd";
+
+// for(const item of productos){
+//   if(item.nombre === nombre){
+//     console.log(item);
+//   }
+// }
