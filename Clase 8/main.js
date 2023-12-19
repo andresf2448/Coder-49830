@@ -75,3 +75,21 @@
 //al ejecutar ambas funciones me debe mostrar aleatoriamente la persona y el premio que ha ganado
 const nombres = ["juanita", "pedrito", "andres", "carlitos", "marina"];
 const premios = ["celular", "carro", "ropa", "computador"];
+
+const generarNombreAleatorio = () => {
+  let indice = Math.floor(Math.random() * nombres.length);
+
+  return nombres[indice];
+};
+
+const generarPremioAleatorio = () => {
+  let indice = Math.floor(Math.random() * premios.length);
+
+  return premios[indice];
+};
+
+for (let i = 0; i < 4; i++) {
+  alert(
+    `Ganador ${generarNombreAleatorio()} Premio: ${generarPremioAleatorio()}`
+  );
+}
