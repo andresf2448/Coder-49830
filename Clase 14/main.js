@@ -82,3 +82,86 @@ let boton = document.getElementById("boton");
 //     }
 //   });
 // });
+
+//TOASTIFY
+// boton.addEventListener("click", () => {
+//   Toastify({
+//     text: "Probando toast!",
+//     duration: 3000,
+//   }).showToast();
+// });
+
+// boton.addEventListener("click", () => {
+//   Toastify({
+//     text: "Probando toast!",
+//     duration: 3000,
+//     style: {
+//       background: "linear-gradient(to left, #00b09b, #96c92d)",
+//     },
+//   }).showToast();
+// });
+
+// boton.addEventListener("click", () => {
+//   Toastify({
+//     text: "Probando toast!",
+//     duration: 3000,
+//     onClick: () => {
+//       Toastify({
+//         text: "Clickeaste un Toast!",
+//         duration: 1500,
+//       }).showToast();
+//     },
+//   }).showToast();
+// });
+
+// boton.addEventListener("click", () => {
+//   Toastify({
+//     text: "Click aquí para ir a Coder!",
+//     duration: 3000,
+//     destination: "https://www.coderhouse.com",
+//   }).showToast();
+// });
+
+//LUXON
+// const DateTime = luxon.DateTime;
+// const hoy = DateTime.local(2024, 1, 16, 18, 36);
+// const now = DateTime.now();
+// console.log(now);
+// console.log(hoy.toString());
+// console.log(now.toString());
+// console.log(now.year);
+// console.log(now.month);
+// console.log(now.day);
+// console.log(now.second);
+// console.log(now.weekday);
+// console.log(now.zoneName);
+// console.log(now.daysInMonth);
+// console.log(now.toLocaleString());
+// console.log(now.toLocaleString(DateTime.DATE_FULL));
+// console.log(now.toLocaleString(DateTime.TIME_SIMPLE));
+// console.log(now.setLocale('en').toLocaleString(DateTime.DATE_FULL));
+// console.log(now.setLocale('es').toLocaleString(DateTime.DATE_FULL));
+
+// const DateTime = luxon.DateTime;
+
+// const now = DateTime.now();
+// console.log(now.toLocaleString(DateTime.DATETIME_SHORT));
+
+// const suma = now.plus({ hours: 1, minutes: 10 });
+// console.log(suma.toLocaleString(DateTime.DATETIME_SHORT));
+
+// const resta = now.minus({month: 2, days: 1});
+// console.log(resta.toLocaleString(DateTime.DATETIME_SHORT));
+
+const DateTime = luxon.DateTime;
+const Interval = luxon.Interval;
+
+const hoy = DateTime.now();
+const navidad = DateTime.local(2024, 12, 24);
+
+const i = Interval.fromDateTimes(hoy, navidad);
+
+console.log(i.length("days"));
+console.log(i.length("hours"));
+console.log(i.length("minutes"));
+
